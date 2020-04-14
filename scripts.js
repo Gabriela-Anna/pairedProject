@@ -29,9 +29,26 @@ spaceApp.getMars = function () {
         method: 'GET',
         dataType: 'json',
     }).then(function (result) {
-        const images = result.collection.items
+        const keywords = Array.from(result.collection.items);
+        const filterKeywords = keywords.map((value)=>{
+            console.log(value.data[0].keywords[1])
+
+        })
+
+
+
+        keywords.forEach((keyword) => {
+            // console.log(keyword.data[0].keywords)
+
+        })
+
+        // console.log(result.collection.items)
+
+
+        const images = Array.from(result.collection.items)
         images.forEach((image)=>{
-            console.log(image)
+
+            // console.log(image.links[0].href)
         })
         // console.log(result)
         // result.forEach((res) => {
