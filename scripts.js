@@ -1,4 +1,5 @@
 //create name space app
+// console.log(lodash)
 const spaceApp = {}
 
 //links for api calls
@@ -31,8 +32,9 @@ spaceApp.getMars = function () {
     }).then(function (result) {
         const keywords = Array.from(result.collection.items);
         const filterKeywords = keywords.map((value)=>{
-            console.log(value.data[0].keywords[1])
-
+            if (value.data[0].keywords[1] !== 'Mars Celebration') {
+                return console.log(value.data[0].keywords[1])
+    }
         })
 
 
