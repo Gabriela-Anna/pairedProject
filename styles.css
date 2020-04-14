@@ -25,3 +25,7 @@ h1 {
   width: 100%;
   padding: 20px;
 }
+
+.planets {
+  background-color: black;
+}
