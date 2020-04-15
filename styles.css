@@ -29,3 +29,14 @@ h1 {
 .planets {
   background-color: black;
 }
+
+.display-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.images {
+  margin: 5%;
+  flex-basis: auto;
+}
