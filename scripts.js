@@ -30,28 +30,43 @@ spaceApp.getMars = function () {
         method: 'GET',
         dataType: 'json',
     }).then(function (result) {
+        // console.log(result)
         const keywords = Array.from(result.collection.items);
-        const filterKeywords = keywords.map((value) => {
+        const filterKeywords = keywords.map((value, description, location) => {
+            descriptionTwo.forEach((item) => {
+                const item = result.collection.items[0].data[0].description;
+                console.log(item);
+            })
+            // console.log(images1);
+            const location1 = result.collection.items[0].data[0].location;
+            // console.log(location1);
             if (value.data[0].keywords.includes('Mars Celebration')) {
                 console.log('we dont need them')
             } else {
-                console.log(value.links[0].href)
+                $('.display-images').append(`
+                <h2>Location: ${value.data[0].location}</h2>
+                <img class='images' src="${value.links[0].href}">
+                `);
+                // value.links[0].href
             }
         });
 
-    const images = Array.from(result.collection.items)
-        images.forEach((image)=>{
+
+    spaceApp.images = Array.from(result.collection.items)
+        spaceApp.images.forEach((image)=>{
             console.log(image.links[0].href)
         })
     });
 };
 
 spaceApp.setUpEventListeners = function (){
-        $('#mars').on('click', function (e){
-            e.preventDefault()
-            spaceApp.getMars()
-            console.log("mars!!!")
-        })
+    $('#mars').on('click', function (e){
+        e.preventDefault()
+        spaceApp.getMars()
+        console.log("mars!!!");
+        // $('.planets').css('display', 'none');
+
+    })
     
 }
 
