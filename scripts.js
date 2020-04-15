@@ -31,34 +31,18 @@ spaceApp.getMars = function () {
         dataType: 'json',
     }).then(function (result) {
         const keywords = Array.from(result.collection.items);
-        const filterKeywords = keywords.map((value)=>{
-            if (value.data[0].keywords[1] !== 'Mars Celebration') {
-                return console.log(value.data[0].keywords[1])
-    }
-        })
+        const filterKeywords = keywords.map((value) => {
+            if (value.data[0].keywords.includes('Mars Celebration')) {
+                console.log('we dont need them')
+            } else {
+                console.log(value.links[0].href)
+            }
+        });
 
-
-
-        keywords.forEach((keyword) => {
-            // console.log(keyword.data[0].keywords)
-
-        })
-
-        // console.log(result.collection.items)
-
-
-        const images = Array.from(result.collection.items)
+    const images = Array.from(result.collection.items)
         images.forEach((image)=>{
-
-            // console.log(image.links[0].href)
+            console.log(image.links[0].href)
         })
-        // console.log(result)
-        // result.forEach((res) => {
-        //     console.log(res)  
-            
-        // });
-        // console.log(result.collection.items[0].links[0].href)
-        // $('#mars').append(`<img src="${image}">`)
     });
 };
 
@@ -79,4 +63,4 @@ spaceApp.init = () => {
 
 $(document).ready(function() { 
     spaceApp.init()
-  });
+});
