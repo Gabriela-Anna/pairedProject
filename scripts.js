@@ -14,18 +14,19 @@ spaceApp.getPlanets = function (query) {
         dataType: 'json',
     }).then(function (result) {
         console.log(result)
-
         spaceApp.images = Array.from(result.collection.items)
         spaceApp.images.forEach((image) => {
-
-            console.log(image.links[0].href);
-            $('.display-images').append(`
+            if (!image.data[0].keywords.includes('Mars Celebration')) {
+                // do the displaying stuff in here 
+                console.log(image.links[0].href);
+                $('.display-images').append(`
                     <div>
                     <h2 class="heading-planets">${image.data[0].description}</h2>
                     <img class='${query}-images' src="${image.links[0].href}" alt="${query}">
                     </div>
                     `);
-        })
+            }
+        });
     });
 }
 
@@ -34,29 +35,7 @@ spaceApp.setUpEventListeners = function () {
             e.preventDefault()
             const planetsId = $(this)[0].id;
             spaceApp.getPlanets(planetsId)
-
-            if(spaceApp.getPlanets(planetsId) === 'mars'){
-                console.log("maaarrsss")
-            }
     });
-};
-
-
-const marsFiltered = () => {
-    const keywords = Array.from(result.collection.items);
-    const filterKeywords = keywords.map((value) => {
-    if (value.data[0].keywords.includes('Mars Celebration')) {
-        console.log('we dont need them')
-    } else {
-        console.log(value.data[0].location);
-        $('.display-images').append(`
-                    <div>
-                    <h2 class="heading-planets">${value.data[0].description}</h2>
-                    <img class='mars-images' src="${value.links[0].href}">
-                    </div>
-                    `);
-    }
-})
 }
 
 
