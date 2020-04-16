@@ -30,13 +30,36 @@ h1 {
   background-color: black;
 }
 
-.display-images {
+/* .display-images {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.images {
-  margin: 5%;
-  flex-basis: auto;
+.heading {
+  margin: 0;
+  text-align: center;
 }
+
+.images{
+  margin: 10px 60px 100px;
+} */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.display-images {
+  background: #EEE;
+}
+
+.display-images img {
+  display: block;
+  /* height: 200px; */
+}
+
+/* @media screen and ( min-width: 768px ) {
+  .carousel img {
+    height: 400px;
+  }
+} */
