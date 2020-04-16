@@ -42,7 +42,7 @@ spaceApp.getEarth = function () {
             console.log(image.links[0].href);
             $('.display-images').append(`
                     <div>
-                    <h2 class="heading">${image.data[0].description}</h2>
+                    <h2 class="heading-planets">${image.data[0].description}</h2>
                     <img class='urunus-images' src="${image.links[0].href}">
                     </div>
                     `);
@@ -65,7 +65,7 @@ spaceApp.getJupiter = function () {
             console.log(image.links[0].href);
             $('.display-images').append(`
                     <div>
-                    <h2 class="heading">${image.data[0].description}</h2>
+                    <h2 class="heading-planets">${image.data[0].description}</h2>
                     <img class='urunus-images' src="${image.links[0].href}">
                     </div>
                     `);
@@ -88,7 +88,7 @@ spaceApp.getNeptune = function () {
             console.log(image.links[0].href);
             $('.display-images').append(`
                     <div>
-                    <h2 class="heading">${image.data[0].description}</h2>
+                    <h2 class="heading-planets">${image.data[0].description}</h2>
                     <img class='urunus-images' src="${image.links[0].href}">
                     </div>
                     `);
@@ -111,7 +111,7 @@ spaceApp.getSaturn = function () {
             console.log(image.links[0].href);
             $('.display-images').append(`
                     <div>
-                    <h2 class="heading">${image.data[0].description}</h2>
+                    <h2 class="heading-planets">${image.data[0].description}</h2>
                     <img class='urunus-images' src="${image.links[0].href}">
                     </div>
                     `);
@@ -136,7 +136,7 @@ spaceApp.getMars = function () {
                 console.log(value.data[0].location);
                     $('.display-images').append(`
                     <div>
-                    <h2 class="heading">${value.data[0].description}</h2>
+                    <h2 class="heading-planets">${value.data[0].description}</h2>
                     <img class='mars-images' src="${value.links[0].href}">
                     </div>
                     `);
@@ -166,7 +166,7 @@ spaceApp.getUranus = function () {
             console.log(image.links[0].href);
             $('.display-images').append(`
                     <div>
-                    <h2 class="heading">${image.data[0].description}</h2>
+                    <h2 class="heading-planets">${image.data[0].description}</h2>
                     <img class='urunus-images' src="${image.links[0].href}">
                     </div>
                     `);
@@ -189,7 +189,7 @@ spaceApp.getMercury = function () {
             console.log(image.links[0].href);
             $('.display-images').append(`
                     <div>
-                    <h2 class="heading">${image.data[0].description}</h2>
+                    <h2 class="heading-planets">${image.data[0].description}</h2>
                     <img class='mercury-images' src="${image.links[0].href}">
                     </div>
                     `);
@@ -212,7 +212,7 @@ spaceApp.getVenus = function () {
             console.log(image.links[0].href);
             $('.display-images').append(`
                     <div>
-                    <h2 class="heading">${image.data[0].description}</h2>
+                    <h2 class="heading-planets">${image.data[0].description}</h2>
                     <img class='venus-images' src="${image.links[0].href}">
                     </div>
                     `);
@@ -235,7 +235,7 @@ spaceApp.getMoon = function () {
             console.log(image.links[0].href);
             $('.display-images').append(`
                     <div>
-                    <h2 class="heading">${image.data[0].description}</h2>
+                    <h2 class="heading-planets">${image.data[0].description}</h2>
                     <img class='urunus-images' src="${image.links[0].href}">
                     </div>
                     `);
@@ -258,7 +258,7 @@ spaceApp.getGalaxies = function () {
             console.log(image.links[0].href);
             $('.display-images').append(`
                     <div>
-                    <h2 class="heading">${image.data[0].description}</h2>
+                    <h2 class="heading-planets">${image.data[0].description}</h2>
                     <img class='urunus-images' src="${image.links[0].href}">
                     </div>
                     `);
@@ -333,8 +333,9 @@ spaceApp.setUpEventListeners = function (){
     $('#galaxies').on('click', function (e) {
         e.preventDefault();
         spaceApp.getGalaxies();
+        $('.display-images').empty()
         console.log("galaxies!!!");
-        // $('.planets').css('display', 'none');
+        $('.planets').css('display', 'none');
     });
 }
 
