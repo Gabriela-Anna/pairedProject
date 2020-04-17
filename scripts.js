@@ -21,7 +21,7 @@ spaceApp.getPlanets = function (query) {
                 console.log(image.links[0].href);
                 $('.display-images').append(`
                     <div>
-                    <h2 class="heading-planets">${image.data[0].description}</h2>
+                    <h2 class="heading-planets">${image.data[0].title}</h2>
                     <img class='${query}-images' src="${image.links[0].href}" alt="${query}">
                     </div>
                     `);
@@ -34,10 +34,18 @@ spaceApp.setUpEventListeners = function () {
         $('.planet-container').on('click', function (e) {
             e.preventDefault()
             const planetsId = $(this)[0].id;
-            spaceApp.getPlanets(planetsId)
+            spaceApp.getPlanets(planetsId);
+            $('.close').css('display', 'inline');
+            $('.planets').css('display', 'none');
     });
 }
 
+    $('.close').on('click', function (e) {
+        e.preventDefault();
+        $('.display-images').empty();
+        $('.planets').css('display', 'flex');
+        $('.close').css('display', 'none');
+    });
 
 
 spaceApp.init = () => {

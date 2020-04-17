@@ -1,97 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Systematis Solaris</title>
-    <link rel="stylesheet" href="./styles.css" />
-    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@497&family=Righteous&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body class="section2">
-    <main>
-      <h1 class="space-title">Explore Space</h1>
-      <section class="planets">
-        <div id="earth" class="planet-container">
-          <img
-            data-set="earth"
-            id="earth"
-            class="planet-img"
-            src="./assets/earth2.png"
-            alt=""
-          />
-          <a id="earth" href="#">Earth</a>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Systematis Solaris</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@497&family=Righteous&display=swap"
+    rel="stylesheet" />
+</head>
 
-        <div id="jupiter" class="planet-container">
-          <img
-            id="jupiter"
-            class="planet-img"
-            src="../assets sized/jupiter-png-2.png"
-            atl=""
-          />
-          <a id="jupiter" href="#">Jupiter</a>
-        </div>
+<body class="section2">
+  <main>
+    <h1 class="space-title">Explore Space</h1>
+    <section class="planets">
+      <div id="earth" class="planet-container">
+        <img data-set="earth" id="earth" class="planet-img" src="./assets/earth2.png" alt="" />
+        <a id="earth" href="#">Earth</a>
+      </div>
 
-        <div id="neptune" class="planet-container">
-          <img class="planet-img" src="./assets/neptune.png" alt="" />
-          <a id="neptune" href="#">Neptune</a>
-        </div>
+      <div id="jupiter" class="planet-container">
+        <img id="jupiter" class="planet-img" src="./assets/jupiter-png-2.png" atl="" />
+        <a id="jupiter" href="#">Jupiter</a>
+      </div>
 
-        <div id="saturn" class="planet-container">
-          <div class="cirlce"></div>
-          <a id="saturn" href="#">Saturn</a>
-        </div>
+      <div id="neptune" class="planet-container">
+        <img class="planet-img" src="./assets/neptune.png" alt="" />
+        <a id="neptune" href="#">Neptune</a>
+      </div>
 
-        <div id="mars" class="planet-container">
-          <img class="planet-img" src="./assets/mars2.png" alt="" />
-          <a id="mars" href="#">Mars</a>
-        </div>
+      <div id="saturn" class="planet-container">
+        <div class="cirlce"></div>
+        <a id="saturn" href="#">Saturn</a>
+      </div>
 
-        <div id="uranus" class="planet-container">
-          <img class="planet-img" src="./assets/uranus.png" alt="" />
-          <a id="uranus" href="#">Uranus</a>
-        </div>
+      <div id="mars" class="planet-container">
+        <img class="planet-img" src="./assets/mars2.png" alt="" />
+        <a id="mars" href="#">Mars</a>
+      </div>
 
-        <div id="mercury" class="planet-container">
-          <img class="planet-img" src="./assets/mercury2.png" alt="" />
-          <a id="mercury" href="#">Mercury</a>
-        </div>
+      <div id="uranus" class="planet-container">
+        <img class="planet-img" src="./assets/uranus.png" alt="" />
+        <a id="uranus" href="#">Uranus</a>
+      </div>
 
-        <div id="venus" class="planet-container">
-          <img class="planet-img" src="./assets/venus.png" alt="" />
-          <a id="venus" href="#">Venus</a>
-        </div>
+      <div id="mercury" class="planet-container">
+        <img class="planet-img" src="./assets/mercury2.png" alt="" />
+        <a id="mercury" href="#">Mercury</a>
+      </div>
 
-        <div id="moon" class="planet-container">
-          <img class="planet-img" src="./assets/moon.png" alt="" />
-          <a id="moon" href="#">Moon</a>
-        </div>
+      <div id="venus" class="planet-container">
+        <img class="planet-img" src="./assets/venus.png" alt="" />
+        <a id="venus" href="#">Venus</a>
+      </div>
 
-        <div id="galaxies" class="planet-container">
-          <img
-            class="planet-img"
-            src="./assets/largeGALAXYEFFECT.1.png"
-            alt=""
-          />
-          <a id="galaxies" href="./display.html">Galaxies</a>
-        </div>
-      </section>
+      <div id="moon" class="planet-container">
+        <img class="planet-img" src="./assets/moon.png" alt="" />
+        <a id="moon" href="#">Moon</a>
+      </div>
 
-      <div class="display-images"></div>
-    </main>
-  </body>
+      <div id="galaxies" class="planet-container">
+        <img class="planet-img" src="./assets/largeGALAXYEFFECT.1.png" alt="" />
+        <a id="galaxies" href="./display.html">Galaxies</a>
+      </div>
+    </section>
 
-  <script
-    src="https://code.jquery.com/jquery-3.2.1.min.js"
-    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"
-  ></script>
-  <!-- <script src="/path/to/flickity.pkgd.min.js"></script> -->
+    <p class="close">BACK</p>
+    <div class="display-images">
+    </div>
+  </main>
+</body>
 
-  <script src="scripts.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<!-- <script src="/path/to/flickity.pkgd.min.js"></script> -->
+
+<script src="scripts.js"></script>
+
 </html>
