@@ -37,7 +37,18 @@ button {
 
 .planet-img {
   width: 140px;
+  animation: rotate 10s linear infinite;
 }
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .cirlce {
   background-color: white;
   height: 140px;
@@ -127,9 +138,18 @@ a {
   border: 1px solid black;
 }
 
+
+/* close button */
+.close {
+  position: fixed;
+  display: none;
+  background: white;
+}
+
 .display-container {
   padding: 1rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1rem;
 }
+
