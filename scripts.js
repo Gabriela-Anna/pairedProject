@@ -18,7 +18,7 @@ spaceApp.getPlanets = function (query) {
                 $('.display-images').append(`
                     <div class="display-container">
                     <h2 class="heading-planets">${image.data[0].title}</h2>
-                    <img class='${query}-images images' src="${image.links[0].href}" alt="${query}">
+                    <img class='${query}-images images' src="${image.links[0].href}" alt="${query}" data-action="zoom">
                     </div>
                 `);
             }
