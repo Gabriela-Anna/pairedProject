@@ -4,39 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Systematis Solaris</title>
-    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@497&family=Righteous&display=swap"
-      rel="stylesheet"
-    />
+    <!--loading google font-->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@497&family=Righteous&display=swap" rel="stylesheet"/>
+    <!--loading CSS-->
     <link rel="stylesheet" href="./styles.css" />
   </head>
 
   <body class="section2">
+    <!--Titles start here-->
     <main class="wrapper planet-page">
       <h1 class="space-title">Explore Space</h1>
       <h2 class="space-subheading"></h2>
+    <!--Titles end here-->
+
+      <!--Planets section starts here-->
       <section class="planets">
         <div id="earth observation" class="planet-container">
           <a href="#">
-            <img
-              id="earth"
-              class="planet-img"
-              src="./assets/earth2.png"
-              alt=""
-            />
+            <img id="earth" class="planet-img" src="./assets/earth2.png" alt=""/>
           </a>
           <p class="planet-name">Earth</p>
         </div>
 
         <div id="jupiter" class="planet-container">
           <a href="#">
-            <img
-              id="jupiter"
-              class="planet-img"
-              src="./assets/jupiter-png-2.png"
-              atl=""
-            />
+            <img id="jupiter" class="planet-img" src="./assets/jupiter-png-2.png" atl=""/>
           </a>
           <p class="planet-name">Jupiter</p>
         </div>
@@ -111,25 +103,20 @@
           <p class="planet-name">Pluto</p>
         </div>
       </section>
+      <!--Planets section ends here-->
 
+
+      <!--Displaying images from API starts here-->
       <div class="display-images">
-        <button
-          class="close"
-          type="submit"
-          onclick="window.location.href='planets.html'"
-        >
-          Back
-        </button>
+        <button class="close" type="submit" onclick="window.location.href='planets.html'">Back</button>
       </div>
+      <!--Displaying images from API ends here-->
     </main>
   </body>
 
-  <script
-    src="https://code.jquery.com/jquery-3.2.1.min.js"
-    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"
-  ></script>
-  <!-- <script src="/path/to/flickity.pkgd.min.js"></script> -->
+  <!--loading jQuery-->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
+  <!--Loading JS-->
   <script src="scripts.js"></script>
 </html>
