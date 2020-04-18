@@ -8,7 +8,9 @@ spaceApp.getPlanets = function (query) {
         url: `https://images-api.nasa.gov/search?media_type=image&q=${query}`,
         method: 'GET',
         dataType: 'json',
-    }).then(function (result) {
+        beforeSend: function(){
+            $('#loader').removeClass('hidden')
+        }, success: function(result){
         spaceApp.images = Array.from(result.collection.items)
         spaceApp.images.forEach((image) => {
             //displaying planets matching user input
@@ -21,11 +23,17 @@ spaceApp.getPlanets = function (query) {
                 `);
             }
         });
+    }, complete: function(){
+        $('#loader').addClass('hidden')
+    }
     });
 }
 
+
+
 spaceApp.setUpEventListeners = function () {
     $('.planet-container').on('click', function (e) {
+        console.log('PLANETSS')
         e.preventDefault()
         const planetsId = $(this)[0].id;
         spaceApp.getPlanets(planetsId);
@@ -37,8 +45,8 @@ spaceApp.setUpEventListeners = function () {
         } else {
             $('.space-subheading').append(`${(planetsId)}`).css('height', '20vh').css('text-transform', "capitalize")
         }
-        
     });
+
 }
 
 //init
