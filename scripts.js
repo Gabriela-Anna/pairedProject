@@ -33,7 +33,6 @@ spaceApp.getPlanets = function (query) {
 
 spaceApp.setUpEventListeners = function () {
     $('.planet-container').on('click', function (e) {
-        console.log('PLANETSS')
         e.preventDefault()
         const planetsId = $(this)[0].id;
         spaceApp.getPlanets(planetsId);
