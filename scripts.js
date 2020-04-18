@@ -26,8 +26,6 @@ spaceApp.getPlanets = function (query) {
                     <img class='${query}-images images' src="${image.links[0].href}" alt="${query}">
                     </div>
                     `);
-
-                   
             }
         });
     });
@@ -36,21 +34,28 @@ spaceApp.getPlanets = function (query) {
 
 
 spaceApp.setUpEventListeners = function () {
-        $('.planet-container').on('click', function (e) {
-            e.preventDefault()
-            const planetsId = $(this)[0].id;
-            spaceApp.getPlanets(planetsId);
-            $('.close').css('display', 'inline');
-            $('.planets').css('display', 'none');
+    $('.planet-container').on('click', function (e) {
+        e.preventDefault()
+        const planetsId = $(this)[0].id;
+        spaceApp.getPlanets(planetsId);
+        $('.close').css('display', 'inline');
+        $('.planets').css('display', 'none');
+        $('.space-title').css('display', 'none')
+        if (planetsId === 'earth observation') {
+            $('.space-subheading').append(`<h2 class="space-subheading">Earth</h2>`).css('height', '20vh').css('text-transform', "capitalize")
+        } else {
+            $('.space-subheading').append(`${(planetsId)}`).css('height', '20vh').css('text-transform', "capitalize")
+        }
+        
     });
 }
 
-    $('.close').on('click', function (e) {
-        e.preventDefault();
-        $('.display-images').empty();
-        $('.planets').css('display', 'flex');
-        $('.close').css('display', 'none');
-    });
+    // $('.close').on('click', function (e) {
+    //     e.preventDefault();
+    //     $('.display-images').empty();
+    //     $('.planets').css('display', 'flex');
+    //     $('.close').css('display', 'none');
+    // });
 
 
 spaceApp.init = () => {

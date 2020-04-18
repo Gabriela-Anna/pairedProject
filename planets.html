@@ -4,88 +4,123 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Systematis Solaris</title>
-    <link rel="stylesheet" href="./styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Orbitron:wght@497&family=Righteous&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
 
   <body class="section2">
-    <main>
+    <main class="wrapper planet-page">
       <h1 class="space-title">Explore Space</h1>
+      <h2 class="space-subheading"></h2>
       <section class="planets">
         <div id="earth observation" class="planet-container">
-          <img
-            data-set="earth"
-            id="earth"
-            class="planet-img"
-            src="./assets/earth2.png"
-            alt=""
-          />
-          <a id="earth" href="#">Earth</a>
+          <a href="#">
+            <img
+              id="earth"
+              class="planet-img"
+              src="./assets/earth2.png"
+              alt=""
+            />
+          </a>
+          <p class="planet-name">Earth</p>
         </div>
 
         <div id="jupiter" class="planet-container">
-          <img
-            id="jupiter"
-            class="planet-img"
-            src="./assets/jupiter-png-2.png"
-            atl=""
-          />
-          <a id="jupiter" href="#">Jupiter</a>
+          <a href="#">
+            <img
+              id="jupiter"
+              class="planet-img"
+              src="./assets/jupiter-png-2.png"
+              atl=""
+            />
+          </a>
+          <p class="planet-name">Jupiter</p>
         </div>
 
         <div id="neptune" class="planet-container">
-          <img class="planet-img" src="./assets/neptune.png" alt="" />
-          <a id="neptune" href="#">Neptune</a>
+          <a hre="#">
+            <img class="planet-img" src="./assets/neptune.png" alt="" />
+          </a>
+          <p class="planet-name">Neptune</p>
         </div>
 
         <div id="saturn" class="planet-container">
-          <div class="cirlce"></div>
-          <a id="saturn" href="#">Saturn</a>
+          <a href="#">
+            <div class="cirlce"></div>
+          </a>
+          <p class="planet-name">Saturn</p>
         </div>
 
         <div id="mars" class="planet-container">
-          <img class="planet-img" src="./assets/mars2.png" alt="" />
-          <a id="mars" href="#">Mars</a>
+          <a href="#">
+            <img class="planet-img" src="./assets/mars2.png" alt="" />
+          </a>
+          <p class="planet-name">Mars</p>
         </div>
 
         <div id="uranus" class="planet-container">
-          <img class="planet-img" src="./assets/uranus.png" alt="" />
-          <a id="uranus" href="#">Uranus</a>
+          <a href="#">
+            <img class="planet-img" src="./assets/uranus.png" alt="" />
+          </a>
+          <p class="planet-name">Uranus</p>
         </div>
 
         <div id="mercury" class="planet-container">
-          <img class="planet-img" src="./assets/mercury2.png" alt="" />
-          <a id="mercury" href="#">Mercury</a>
+          <a href="#">
+            <img class="planet-img" src="./assets/mercury2.png" alt="" />
+          </a>
+          <p class="planet-name">Mercury</p>
         </div>
 
         <div id="venus" class="planet-container">
-          <a id="venus" href="#">
+          <a href="#">
             <img class="planet-img" src="./assets/venus.png" alt="" />
           </a>
           <p class="planet-name">Venus</p>
         </div>
 
         <div id="moon" class="planet-container">
-          <a id="moon" href="#">
+          <a href="#">
             <img class="planet-img" src="./assets/moon.png" alt="" />
           </a>
           <p class="planet-name">Moon</p>
         </div>
 
         <div id="galaxies" class="planet-container">
-          <a id="galaxies" href="#">
+          <a href="#">
             <img class="planet-img" src="./assets/galaxy.png" alt="" />
           </a>
           <p class="planet-name">Galaxies</p>
         </div>
+
+        <div id="sun" class="planet-container">
+          <a href="#">
+            <img class="planet-img" src="./assets/sun.png" alt="" />
+          </a>
+          <p class="planet-name">Sun</p>
+        </div>
+
+        <div id="pluto" class="planet-container">
+          <a href="#">
+            <img class="planet-img" src="./assets/pluto.png" alt="" />
+          </a>
+          <p class="planet-name">Pluto</p>
+        </div>
       </section>
 
-      <p class="close">BACK</p>
-      <div class="display-images"></div>
+      <div class="display-images">
+        <button
+          class="close"
+          type="submit"
+          onclick="window.location.href='planets.html'"
+        >
+          Back
+        </button>
+      </div>
     </main>
   </body>
 
