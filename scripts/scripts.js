@@ -1,31 +1,41 @@
+const typed = new Typed('#typed', {
+    strings: [
+        "Click on a planet",
+    ],
+    typeSpeed: 30,
+    backSpeed: 30,
+    backDelay: 700,
+    smartBackspace: false, // Default value
+    loop: false,
+    showCursor: false
+});
+
 //create name space app
 const spaceApp = {}
 
-
-//ajax call
 spaceApp.getPlanets = function (query) {
     $.ajax({
         url: `https://images-api.nasa.gov/search?media_type=image&q=${query}`,
         method: 'GET',
         dataType: 'json',
-        beforeSend: function(){
+        beforeSend: function () {
             $('#loader').removeClass('hidden')
-        }, success: function(result){
-        spaceApp.images = Array.from(result.collection.items)
-        spaceApp.images.forEach((image) => {
-            //displaying planets matching user input
-            if (!image.data[0].keywords.includes('Mars Celebration')) {
-                $('.display-images').append(`
+        }, success: function (result) {
+            spaceApp.images = Array.from(result.collection.items)
+            spaceApp.images.forEach((image) => {
+                //displaying planets matching user input
+                if (!image?.data[0]?.keywords?.includes('Mars Celebration')) {
+                    $('.display-images').append(`
                     <div class="display-container">
                     <h2 class="heading-planets">${image.data[0].title}</h2>
                     <img class='${query}-images images' src="${image.links[0].href}" alt="${query}" data-action="zoom">
                     </div>
                 `);
-            }
-        });
-    }, complete: function(){
-        $('#loader').addClass('hidden')
-    }
+                }
+            });
+        }, complete: function () {
+            $('#loader').addClass('hidden')
+        }
     });
 }
 
@@ -38,11 +48,13 @@ spaceApp.setUpEventListeners = function () {
         spaceApp.getPlanets(planetsId);
         $('.close').css('display', 'inline');
         $('.planets').css('display', 'none');
+        $('.type').css('display', 'none')
         $('.space-title').css('display', 'none')
         if (planetsId === 'earth observation') {
-            $('.space-subheading').append(`<h2 class="space-subheading">Earth</h2>`).css('height', '20vh').css('text-transform', "capitalize")
+            $('.space-subheading').append(`Earth
+            <p class="space-text">Click image to enlarge</p>`).css('height', '20vh').css('text-transform', "capitalize")
         } else {
-            $('.space-subheading').append(`${(planetsId)}`).css('height', '20vh').css('text-transform', "capitalize")
+            $('.space-subheading').append(`${(planetsId)} <p class="space-text">Click image to enlarge</p>`).css('height', '20vh').css('text-transform', "capitalize")
         }
     });
 
