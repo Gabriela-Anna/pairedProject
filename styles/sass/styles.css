@@ -505,6 +505,7 @@ a:focus {
   border: none;
   letter-spacing: 3px;
   margin: -105px 0 0 0;
+  font-size: 1.3rem;
 }
 
 .display-container {
@@ -648,8 +649,15 @@ img.zoom-img {
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
+  .saturn {
+    width: 144px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
   .display-images {
     width: 96%;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
 }
 
@@ -663,12 +671,35 @@ img.zoom-img {
   }
   .space-title {
     font-size: 2.7rem;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
   .planet-name {
     font-size: 1.3rem;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
   .footer {
     font-size: 9px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .close {
+    margin-top: -153px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .overlay {
+    left: 38%;
+  }
+}
+
+@media (max-width: 453px) {
+  .space-subheading {
+    font-size: 2.9rem;
+    padding: 0;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
 }
 
@@ -679,22 +710,26 @@ img.zoom-img {
     width: 93%;
     margin-left: 7px;
     margin-top: -36px;
-  }
-  .space-subheading {
-    font-size: 2.9rem;
-    padding: 0;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
   .close {
-    margin-top: -124px;
+    margin: -129px 0 0 2px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
 }
 
 @media (max-width: 367px) {
   .planet-name {
     font-size: 1.3rem;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
   .space-title {
     font-size: 2rem;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
 }
 
@@ -702,9 +737,27 @@ img.zoom-img {
   .landing-title {
     font-size: 2.4rem;
     line-height: 42px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
   .landing-button {
     margin-top: 16px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .lds-dual-ring::after {
+    width: 80px;
+    height: 80px;
+  }
+  .overlay {
+    left: 32%;
+    width: 100px;
+    height: 100px;
+  }
+  .close {
+    margin: -134px 0 0 2px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
 }
 /*# sourceMappingURL=styles.css.map */

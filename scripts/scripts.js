@@ -10,8 +10,6 @@ const typed = new Typed('#typed', {
     showCursor: false
 });
 
-
-
 //create name space app
 const spaceApp = {}
 
