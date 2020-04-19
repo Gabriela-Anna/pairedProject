@@ -80,8 +80,11 @@
     transition: all 0.5s;
   }
   .landing {
-  height: auto;
-}
+    height: 40vh;
+  }
+  .planet-img{
+    animation: rotate 70s linear infinite;
+  }
 }
 
 @media (max-width: 367px) {
