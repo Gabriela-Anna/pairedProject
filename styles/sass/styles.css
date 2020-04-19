@@ -405,13 +405,21 @@ textarea {
 
 /*planets section*/
 .type {
-  color: white;
   display: inherit;
-  text-align: center;
   font-size: 1.2rem;
+}
+
+.type,
+.space-text {
+  color: white;
+  text-align: center;
   padding-top: 10px;
   letter-spacing: 2px;
   background-color: rgba(0, 0, 0, 0.4);
+}
+
+.space-text {
+  font-size: 1rem;
 }
 
 .section2 {
@@ -563,6 +571,12 @@ textarea {
   letter-spacing: 1px;
 }
 
+.earth {
+  margin: 0;
+  height: 15vh;
+  text-transform: capitalize;
+}
+
 /*Spinner for ajax request*/
 body {
   background: #ececec;
@@ -575,7 +589,7 @@ body {
 .overlay {
   position: fixed;
   top: 53%;
-  left: 40%;
+  left: 46%;
   background: rgba(0, 0, 0, 0.8);
   opacity: 1;
   -webkit-transition: all 0.5s;
