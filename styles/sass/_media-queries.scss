@@ -1,0 +1,125 @@
+/*media queries*/
+@media (max-width: 881px) {
+  .space-title {
+    margin-top: 35px;
+  }
+  .planets {
+    margin-top: -40px;
+  }
+  .button-container {
+    top: 63%;
+  }
+
+  .planet-img {
+    width: 120px;
+    transition: all 0.5s;
+  }
+
+  .saturn{
+    width: 144px;
+    transition: all 0.5s;
+  }
+
+  .display-images {
+    width: 96%;
+    transition: all 0.5s;
+  }
+}
+
+@media (max-width: 566px) {
+  .landing-title {
+    font-size: 3rem;
+    line-height: 51px;
+  }
+  .button-container {
+    top: 54%;
+  }
+  .space-title {
+    font-size: 2.7rem;
+    transition: all 0.5s;
+  }
+
+  .planet-name {
+    font-size: 1.3rem;
+    transition: all 0.5s;
+  }
+
+  .footer {
+    font-size: 9px;
+    transition: all 0.5s;
+  }
+    .close {
+    margin-top: -153px;
+    transition: all 0.5s;
+  }
+  .overlay{
+    left:38%
+  }
+}
+
+@media (max-width: 453px){
+  .space-subheading {
+    font-size: 2.9rem;
+    padding: 0;
+    transition: all 0.5s;
+  }
+}
+
+
+@media (max-width: 402px) {
+  .display-images {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    width: 93%;
+    margin-left: 7px;
+    margin-top: -36px;
+    transition: all 0.5s;
+  }
+
+  .close {
+    margin: -129px 0 0 2px;
+    transition: all 0.5s;
+  }
+  .landing {
+  height: 50vh;
+}
+}
+
+@media (max-width: 367px) {
+  .planet-name {
+    font-size: 1.3rem;
+    transition: all 0.5s;
+  }
+
+  .space-title {
+    font-size: 2rem;
+    transition: all 0.5s;
+  }
+}
+
+@media (max-width: 340px) {
+  .landing-title {
+    font-size: 2.4rem;
+    line-height: 42px;
+    transition: all 0.5s;
+  }
+
+  .landing-button {
+    margin-top: 16px;
+    transition: all 0.5s;
+  }
+
+  .lds-dual-ring::after{
+    width: 80px;
+    height: 80px;
+  }
+  .overlay{
+    left:32%;
+    width:100px;
+    height: 100px;
+  }
+
+  .close {
+    margin: -134px 0 0 2px;
+    transition: all 0.5s;
+  }
+}
