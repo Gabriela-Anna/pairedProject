@@ -2,9 +2,9 @@
 
 /*landing page*/
 
-.landing {
-  height: 96vh;
-}
+// .landing {
+//   min-height: 96vh;
+// }
 
 .video {
   position: fixed;
@@ -59,4 +59,7 @@
   font-family: sans-serif;
   font-size: 12px;
   letter-spacing: 1px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }

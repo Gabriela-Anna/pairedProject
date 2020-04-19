@@ -257,10 +257,6 @@ a:focus {
 }
 
 /*landing page*/
-.landing {
-  height: 96vh;
-}
-
 .video {
   position: fixed;
   right: 0;
@@ -313,6 +309,9 @@ a:focus {
   font-family: sans-serif;
   font-size: 12px;
   letter-spacing: 1px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 /*planets section*/
