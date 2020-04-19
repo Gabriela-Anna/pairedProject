@@ -70,7 +70,6 @@
   .display-images {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     width: 93%;
-    margin-left: 7px;
     margin-top: -36px;
     transition: all 0.5s;
   }
@@ -80,7 +79,7 @@
     transition: all 0.5s;
   }
   .landing {
-    height: 60vh;
+    height: 70vh;
   }
   .planet-img{
     animation: rotate 90s linear infinite;

@@ -482,7 +482,7 @@ a:focus {
       -ms-flex-align: stretch;
           align-items: stretch;
   background: rgba(255, 255, 255, 0.5);
-  margin-left: 17px;
+  margin: 0 auto;
 }
 
 .images {
@@ -708,7 +708,6 @@ img.zoom-img {
     -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     width: 93%;
-    margin-left: 7px;
     margin-top: -36px;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
@@ -719,7 +718,7 @@ img.zoom-img {
     transition: all 0.5s;
   }
   .landing {
-    height: 60vh;
+    height: 70vh;
   }
   .planet-img {
     -webkit-animation: rotate 90s linear infinite;
