@@ -1,0 +1,45 @@
+/*Spinner for ajax request*/
+body {
+  background: #ececec;
+}
+
+.lds-dual-ring.hidden {
+  display: none;
+}
+
+
+.overlay {
+  position: fixed;
+  top: 53%;
+  left: 40%;
+  background: rgba(0,0,0,.8);
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 5% auto;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

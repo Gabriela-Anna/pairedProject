@@ -1,0 +1,57 @@
+/*planets section*/
+
+.section2 {
+  background-image: url("../../assets/background.jpg");
+  background-size: cover;
+  height: 96vh;
+}
+
+.space-title {
+  color: white;
+  font-size: 3.2rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+.planet-img {
+  width: 140px;
+  animation: rotate 50s linear infinite;
+  margin: 8px;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.cirlce {
+  background-color: white;
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+}
+
+.planet-name {
+  text-decoration: none;
+  color: white;
+  font-family: "Righteous", cursive;
+  text-align: center;
+  display: block;
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+
+.planets {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 20px 20px 20px;
+  padding-bottom: 0;
+  justify-content: space-evenly;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}

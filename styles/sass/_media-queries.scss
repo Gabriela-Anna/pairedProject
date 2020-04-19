@@ -1,0 +1,85 @@
+
+/*media queries*/
+@media (max-width: 881px) {
+  .space-title {
+    margin-top: 35px;
+  }
+  .planets {
+    margin-top: -40px;
+  }
+  .button-container {
+    top: 63%;
+  }
+
+  .planet-img {
+    width: 120px;
+    transition: all 0.5s;
+  }
+
+  .display-images {
+    width: 96%;
+  }
+}
+
+@media (max-width: 566px) {
+  .landing-title {
+    font-size: 3rem;
+    line-height: 51px;
+  }
+  .button-container {
+    top: 54%;
+  }
+  .space-title {
+    font-size: 2.7rem;
+  }
+
+  .planet-name {
+    font-size: 1.3rem;
+  }
+
+  .footer {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 402px) {
+  .display-images {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    width: 93%;
+    margin-left: 7px;
+    margin-top: -36px;
+  }
+
+  .space-subheading {
+    font-size: 2.9rem;
+    padding: 0;
+  }
+
+  .close {
+    margin-top: -124px;
+  }
+}
+
+@media (max-width: 367px) {
+  .planet-name {
+    font-size: 1.3rem;
+  }
+
+  .space-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 340px) {
+  .landing-title {
+    font-size: 2.4rem;
+    line-height: 42px;
+  }
+
+  .landing-button {
+    margin-top: 16px;
+  }
+}
+
+
+
