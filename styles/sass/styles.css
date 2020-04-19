@@ -718,7 +718,7 @@ img.zoom-img {
     transition: all 0.5s;
   }
   .landing {
-    height: 98vh;
+    height: 99vh;
   }
   .planet-img {
     -webkit-animation: rotate 90s linear infinite;
