@@ -1,3 +1,30 @@
+const typed = new Typed('#typed', {
+    strings: [
+        "Click on a planet",
+    ],
+    typeSpeed: 30,
+    backSpeed: 30,
+    backDelay: 700,
+    smartBackspace: false, // Default value
+    loop: false,
+    showCursor: false
+});
+
+// const typedTwo = new Typed('#type', {
+//     strings: [
+//         "Click on image to enlarge",
+//     ],
+//     typeSpeed: 30,
+//     backSpeed: 30,
+//     backDelay: 700,
+//     smartBackspace: false, // Default value
+//     loop: false,
+//     showCursor: false
+// });
+
+
+
+
 //create name space app
 const spaceApp = {}
 
@@ -38,9 +65,13 @@ spaceApp.setUpEventListeners = function () {
         spaceApp.getPlanets(planetsId);
         $('.close').css('display', 'inline');
         $('.planets').css('display', 'none');
+        $('.type').css('display', 'none')
         $('.space-title').css('display', 'none')
         if (planetsId === 'earth observation') {
-            $('.space-subheading').append(`<h2 class="space-subheading">Earth</h2>`).css('height', '20vh').css('text-transform', "capitalize")
+            $('.space-subheading').append(`
+                <h2 class="space-subheading">Earth</h2>
+                <p class="type">Click on image to enlarge</p>
+            `).css('height', '20vh').css('text-transform', "capitalize")
         } else {
             $('.space-subheading').append(`${(planetsId)}`).css('height', '20vh').css('text-transform', "capitalize")
         }
