@@ -719,11 +719,11 @@ img.zoom-img {
     transition: all 0.5s;
   }
   .landing {
-    height: 40vh;
+    height: 60vh;
   }
   .planet-img {
-    -webkit-animation: rotate 70s linear infinite;
-            animation: rotate 70s linear infinite;
+    -webkit-animation: rotate 90s linear infinite;
+            animation: rotate 90s linear infinite;
   }
 }
 
