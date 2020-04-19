@@ -548,8 +548,8 @@ body {
 
 .lds-dual-ring {
   display: inline-block;
-  width: 100px;
-  height: 100px;
+  width: 130px;
+  height: 122px;
 }
 
 .lds-dual-ring:after {
@@ -717,6 +717,9 @@ img.zoom-img {
     margin: -129px 0 0 2px;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
+  }
+  .landing {
+    height: 70vh;
   }
 }
 
