@@ -15,3 +15,21 @@
 .type {
   font-family: "Orbitron", sans-serif;
 }
+
+button:hover{
+  background-color:#192841;
+  color:white;
+}
+
+button:focus{
+    background-color:#192841;
+  color:white
+}
+
+a{
+  display: inline-block;
+}
+
+a:focus{
+  border: 1px solid white;
+}
