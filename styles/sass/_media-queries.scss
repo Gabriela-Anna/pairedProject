@@ -73,7 +73,6 @@
     margin-top: -36px;
     transition: all 0.5s;
   }
-
   .close {
     margin: -129px 0 0 2px;
     transition: all 0.5s;
@@ -83,6 +82,13 @@
   }
   .planet-img{
     animation: rotate 90s linear infinite;
+  }
+
+  .landing-title{
+    top : 37%;
+  }
+  .button-container {
+    top: 54%;
   }
 }
 

@@ -723,6 +723,12 @@ img.zoom-img {
     -webkit-animation: rotate 90s linear infinite;
             animation: rotate 90s linear infinite;
   }
+  .landing-title {
+    top: 37%;
+  }
+  .button-container {
+    top: 54%;
+  }
 }
 
 @media (max-width: 367px) {
