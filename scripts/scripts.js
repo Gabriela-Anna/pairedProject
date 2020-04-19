@@ -51,10 +51,14 @@ spaceApp.setUpEventListeners = function () {
         $('.type').css('display', 'none')
         $('.space-title').css('display', 'none')
         if (planetsId === 'earth observation') {
-            $('.space-subheading').append(`Earth
-            <p class="space-text">Click image to enlarge</p>`).css('height', '20vh').css('text-transform', "capitalize")
+            $('.space-subheading').append(`
+            <img class="planet-img" src="../assets/earth.png">
+            Earth
+            <p class="space-text">Click image to enlarge</p>`).css('text-transform', "capitalize")
         } else {
-            $('.space-subheading').append(`${(planetsId)} <p class="space-text">Click image to enlarge</p>`).css('height', '20vh').css('text-transform', "capitalize")
+            $('.space-subheading').append(`
+            <img class="planet-img" src="../assets/${planetsId}.png">
+            ${(planetsId)} <p class="space-text">Click image to enlarge</p>`).css('text-transform', "capitalize");
         }
     });
 
