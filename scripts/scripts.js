@@ -24,7 +24,7 @@ spaceApp.getPlanets = function (query) {
             spaceApp.images = Array.from(result.collection.items)
             spaceApp.images.forEach((image) => {
                 //displaying planets matching user input
-                if (!image?.data[0]?.keywords?.includes('Mars Celebration')) {
+                if (image.data[0].keywords !== undefined && !image.data[0].keywords.includes('Mars Celebration')) {
                     $('.display-images').append(`
                     <div class="display-container">
                     <h2 class="heading-planets">${image.data[0].title}</h2>
