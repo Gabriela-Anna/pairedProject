@@ -92,7 +92,7 @@
 
       <div id="galaxies" class="planet-container">
         <a href="#">
-          <img class="planet-img" src="../assets/galaxy.png" alt="Satellite Moon" />
+          <img class="planet-img" src="../assets/galaxy.png" alt="Galaxies" />
         </a>
         <p class="planet-name">Galaxies</p>
       </div>
@@ -114,20 +114,26 @@
     <!--Planets section ends here-->
 
     <!--Displaying images from API starts here-->
+    <!--Spinner-->
     <div id="loader" class="lds-dual-ring hidden overlay"></div>
+    <!--Images-->
     <div class="display-images">
-      <button class="close" type="submit" onclick="window.location.href='planets.html'"><i
-          class="fas fa-angle-double-left"></i></button>
+      <button class="close" type="submit" onclick="window.location.href='planets.html'">
+        <i aria-hidden="true" class="fas fa-angle-double-left"></i>
+        <span class="sr-only">Take me back to planets</span>
+      </button>
     </div>
     <!--Displaying images from API ends here-->
   </main>
-
+  <!--Footer starts here-->
   <footer>
     <p class="footer">
-      <i class="far fa-copyright"></i>
+      <i aria-hidden="true" class="far fa-copyright"></i>
+      <span class="sr-only">Copyright</span>
       Anna Spiridonenkova and Gabriela Parada 2020
     </p>
   </footer>
+  <!--Footer ends here-->
 </body>
 
 

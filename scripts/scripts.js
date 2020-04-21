@@ -49,15 +49,16 @@ spaceApp.setUpEventListeners = function () {
         $('.close').css('display', 'inline');
         $('.planets').css('display', 'none');
         $('.type').css('display', 'none')
+        $('footer').css('display', 'none')
         $('.space-title').css('display', 'none')
         if (planetsId === 'earth observation') {
-            $('.space-subheading').append(`Earth`).css('height', '10vh').css('text-transform', "capitalize");
+            $('.space-subheading').append(`Earth`).css('margin-top', '46px')
             $('.space-text').append(`
-            Click image to enlarge`).css('height', '10vh');
+            Click image to enlarge`).css('padding-bottom', '28px')
         } else {
-            $('.space-subheading').append(`${(planetsId)}`).css('height', '10vh').css('text-transform', "capitalize");
+            $('.space-subheading').append(`${(planetsId)}`).css('margin-top', '46px')
             $('.space-text').append(`
-            Click image to enlarge`).css('height', '10vh');
+            Click image to enlarge`).css('padding-bottom', '28px');
         }
     });
 

@@ -13,14 +13,12 @@
 }
 
 .space-text{
+  padding:0;
   font-size: 1rem;
-
 }
 
 .section2 {
   background-image: url("../../assets/background.jpg");
-  background-size: cover;
-  height: 96vh;
 }
 
 .space-title {
@@ -29,7 +27,6 @@
   text-align: center;
   background-color: rgba(0, 0, 0, 0.3);
   margin-top: 20px;
-  padding-bottom: 10px;
 }
 .planet-img {
   width: 130px;
