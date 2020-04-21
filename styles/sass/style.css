@@ -742,6 +742,10 @@ img.zoom-img {
     -webkit-animation: rotate 90s linear infinite;
             animation: rotate 90s linear infinite;
   }
+  .saturn {
+    -webkit-animation: rotateTwo 90s linear infinite;
+            animation: rotateTwo 90s linear infinite;
+  }
   .landing-title {
     top: 37%;
   }
