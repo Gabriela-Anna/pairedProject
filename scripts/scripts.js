@@ -1,3 +1,4 @@
+//typed js 
 const typed = new Typed('#typed', {
     strings: [
         "Click on a planet",
@@ -5,30 +6,33 @@ const typed = new Typed('#typed', {
     typeSpeed: 30,
     backSpeed: 30,
     backDelay: 700,
-    smartBackspace: false, // Default value
+    smartBackspace: false,
     loop: false,
-    showCursor: false
+    showCursor: false,
 });
 
 //create name space app
 const spaceApp = {}
 
+//ajax call
 spaceApp.getPlanets = function (query) {
     $.ajax({
         url: `https://images-api.nasa.gov/search?media_type=image&q=${query}`,
         method: 'GET',
         dataType: 'json',
         beforeSend: function () {
+            //loader will appear as the page loads information from API
             $('#loader').removeClass('hidden')
+            //once we have the information loop through it and get images
         }, success: function (result) {
             spaceApp.images = Array.from(result.collection.items)
             spaceApp.images.forEach((image) => {
-                //displaying planets matching user input
+                //filter out images from 'Mars Celebration'
                 if (image.data[0].keywords !== undefined && !image.data[0].keywords.includes('Mars Celebration')) {
                     $('.display-images').append(`
                     <div class="display-container">
                     <h2 class="heading-planets">${image.data[0].title}</h2>
-                    <img class='${query}-images images' src="${image.links[0].href}" alt="${query}" data-action="zoom">
+                    <img class='${query}-images images' src="${image.links[0].href}" alt="${image.data[0].description}" data-action="zoom" tabIndex="0">
                     </div>
                 `);
                 }
@@ -44,12 +48,16 @@ spaceApp.getPlanets = function (query) {
 spaceApp.setUpEventListeners = function () {
     $('.planet-container').on('click', function (e) {
         e.preventDefault()
+        //getting planet id 
         const planetsId = $(this)[0].id;
+        //displaying images matching user input
         spaceApp.getPlanets(planetsId);
+        //hiding content once user clicks on planet of choice
         $('.close').css('display', 'inline');
         $('.planets').css('display', 'none');
         $('.type').css('display', 'none')
         $('footer').css('display', 'none')
+        //displaying planet name as title once the images from API are displayed
         $('.space-title').css('display', 'none')
         if (planetsId === 'earth observation') {
             $('.space-subheading').append(`Earth`).css('margin-top', '46px')

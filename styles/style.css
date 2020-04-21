@@ -269,6 +269,16 @@ a:focus {
   border: 1px solid white;
 }
 
+.space-title,
+.space-subheading {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.planets,
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 /*landing page*/
 .video {
   position: fixed;
@@ -355,7 +365,6 @@ a:focus {
   color: white;
   font-size: 3.2rem;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.3);
   margin-top: 20px;
 }
 
@@ -409,7 +418,6 @@ a:focus {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  background-color: rgba(0, 0, 0, 0.5);
   margin-bottom: 20px;
 }
 
@@ -531,10 +539,13 @@ a:focus {
   color: white;
   font-size: 3.2rem;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.3);
   text-align: center;
-  min-height: 10vh;
+  padding-bottom: 10px;
   text-transform: capitalize;
+}
+
+img:focus {
+  border: 1px white solid;
 }
 
 /*Spinner for ajax request*/
@@ -550,10 +561,9 @@ body {
   position: fixed;
   top: 53%;
   left: 46%;
-  background: rgba(0, 0, 0, 0.8);
-  opacity: 1;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  border-radius: 50%;
 }
 
 .lds-dual-ring {
@@ -648,9 +658,6 @@ img.zoom-img {
   .space-title {
     margin-top: 35px;
   }
-  .planets {
-    margin-top: -40px;
-  }
   .button-container {
     top: 63%;
   }
@@ -695,7 +702,7 @@ img.zoom-img {
     transition: all 0.5s;
   }
   .close {
-    margin-top: -153px;
+    margin-top: -131px;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
@@ -707,7 +714,7 @@ img.zoom-img {
 @media (max-width: 453px) {
   .space-subheading {
     font-size: 2.9rem;
-    padding: 0;
+    padding-bottom: 8px;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
@@ -718,12 +725,12 @@ img.zoom-img {
     -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     width: 93%;
-    margin-top: -36px;
+    margin-top: -18px;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
   .close {
-    margin: -129px 0 0 2px;
+    margin: -97px 0 0 2px;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
@@ -739,6 +746,10 @@ img.zoom-img {
   }
   .button-container {
     top: 54%;
+  }
+  .overlay {
+    left: 28%;
+    top: 40%;
   }
 }
 
@@ -756,6 +767,12 @@ img.zoom-img {
 }
 
 @media (max-width: 340px) {
+  .space-subheading {
+    font-size: 2.5rem;
+  }
+  .space-text {
+    font-size: 0.9rem;
+  }
   .landing-title {
     font-size: 2.4rem;
     line-height: 42px;
@@ -764,20 +781,6 @@ img.zoom-img {
   }
   .landing-button {
     margin-top: 16px;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-  }
-  .lds-dual-ring::after {
-    width: 80px;
-    height: 80px;
-  }
-  .overlay {
-    left: 32%;
-    width: 100px;
-    height: 100px;
-  }
-  .close {
-    margin: -134px 0 0 2px;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
