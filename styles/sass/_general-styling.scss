@@ -46,3 +46,13 @@ a{
 a:focus{
   border: 1px solid white;
 }
+
+.space-title,
+.space-subheading{
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.planets,
+.overlay{
+  background-color: rgba(0, 0, 0, 0.5);
+}

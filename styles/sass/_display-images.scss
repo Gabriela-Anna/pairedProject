@@ -52,9 +52,12 @@
   color: white;
   font-size: 3.2rem;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.3);
   text-align: center;
-  min-height: 10vh;
+  padding-bottom:10px;
   text-transform: capitalize;
+}
+
+img:focus{
+  border: 1px white solid;
 }
 

@@ -3,9 +3,7 @@
   .space-title {
     margin-top: 35px;
   }
-  .planets {
-    margin-top: -40px;
-  }
+
   .button-container {
     top: 63%;
   }
@@ -49,7 +47,7 @@
     transition: all 0.5s;
   }
     .close {
-    margin-top: -153px;
+    margin-top: -131px;
     transition: all 0.5s;
   }
   .overlay{
@@ -60,7 +58,7 @@
 @media (max-width: 453px){
   .space-subheading {
     font-size: 2.9rem;
-    padding: 0;
+    padding-bottom:8px;
     transition: all 0.5s;
   }
 }
@@ -70,11 +68,11 @@
   .display-images {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     width: 93%;
-    margin-top: -36px;
+    margin-top: -18px;
     transition: all 0.5s;
   }
   .close {
-    margin: -129px 0 0 2px;
+    margin: -97px 0 0 2px;
     transition: all 0.5s;
   }
   .landing {
@@ -89,6 +87,11 @@
   }
   .button-container {
     top: 54%;
+  }
+
+  .overlay{
+    left:28%;
+    top:40%;
   }
 }
 
@@ -105,6 +108,14 @@
 }
 
 @media (max-width: 340px) {
+
+  .space-subheading{
+    font-size:2.5rem;
+  }
+
+  .space-text{
+    font-size:0.9rem
+  }
   .landing-title {
     font-size: 2.4rem;
     line-height: 42px;
@@ -116,18 +127,14 @@
     transition: all 0.5s;
   }
 
-  .lds-dual-ring::after{
-    width: 80px;
-    height: 80px;
-  }
-  .overlay{
-    left:32%;
-    width:100px;
-    height: 100px;
-  }
+  // .lds-dual-ring::after{
+  //   width: 80px;
+  //   height: 80px;
+  // }
+  // .overlay{
+  //   left:32%;
+  //   width:100px;
+  //   height: 100px;
+  // }
 
-  .close {
-    margin: -134px 0 0 2px;
-    transition: all 0.5s;
-  }
 }

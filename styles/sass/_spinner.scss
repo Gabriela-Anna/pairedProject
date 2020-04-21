@@ -12,9 +12,8 @@ body {
   position: fixed;
   top: 53%;
   left: 46%;
-  background: rgba(0,0,0,.8);
-  opacity: 1;
   transition: all 0.5s;
+  border-radius: 50%;
 }
 
 .lds-dual-ring {
