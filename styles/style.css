@@ -358,7 +358,7 @@ a:focus {
 }
 
 .section2 {
-  background-image: url("../../assets/background.jpg");
+  background-image: url("../assets/background.jpg");
 }
 
 .space-title {
@@ -785,4 +785,3 @@ img.zoom-img {
     transition: all 0.5s;
   }
 }
-/*# sourceMappingURL=styles.css.map */
