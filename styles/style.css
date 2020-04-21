@@ -275,7 +275,8 @@ a:focus {
 }
 
 .planets,
-.overlay {
+.overlay,
+.zoom-overlay {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -631,7 +632,6 @@ img.zoom-img {
 
 .zoom-overlay {
   z-index: 420;
-  background: rgba(255, 255, 255, 0.5);
   position: fixed;
   top: 0;
   left: 0;
