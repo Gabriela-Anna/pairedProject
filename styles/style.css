@@ -487,6 +487,7 @@ a:focus {
   text-shadow: 2px 2px 2px rgba(150, 150, 150, 0.88);
   text-align: center;
   font-size: 20px;
+  line-height: 23px;
 }
 
 .display-images {
@@ -741,6 +742,10 @@ img.zoom-img {
     -webkit-animation: rotate 90s linear infinite;
             animation: rotate 90s linear infinite;
   }
+  .saturn {
+    -webkit-animation: rotateTwo 90s linear infinite;
+            animation: rotateTwo 90s linear infinite;
+  }
   .landing-title {
     top: 37%;
   }
@@ -748,8 +753,7 @@ img.zoom-img {
     top: 54%;
   }
   .overlay {
-    left: 28%;
-    top: 40%;
+    left: 32%;
   }
 }
 

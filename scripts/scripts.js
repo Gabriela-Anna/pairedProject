@@ -24,7 +24,7 @@ spaceApp.getPlanets = function (query) {
             //loader will appear as the page loads information from API
             $('#loader').removeClass('hidden')
             //once we have the information loop through it and get images
-        }, success: function () {
+        }, success: function (result) {
             spaceApp.images = Array.from(result.collection.items)
             spaceApp.images.forEach((image) => {
                 //filter out images from 'Mars Celebration'
