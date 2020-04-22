@@ -47,6 +47,17 @@
   letter-spacing: 2px;
 }
 
+button:hover{
+  background-color:#192841;
+  color:white;
+}
+
+button:focus{
+  background-color:#192841;
+  color:white;
+  border: 2px white solid;
+}
+
 .footer {
   color: white;
   background: black;
