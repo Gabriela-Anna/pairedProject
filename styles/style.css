@@ -318,6 +318,7 @@ a:focus {
 }
 
 .landing-button {
+  background-color: white;
   border: 0;
   padding: 10px;
   border-radius: 7px;
@@ -518,6 +519,8 @@ a:focus {
 }
 
 .close {
+  color: #192841;
+  background: white;
   position: fixed;
   display: none;
   padding: 5px 9px 5px 9px;
