@@ -370,7 +370,7 @@ textarea {
 }
 
 .planet-img {
-  width: 130px;
+  width: 121px;
   -webkit-animation: rotate 50s linear infinite;
           animation: rotate 50s linear infinite;
   margin: 8px;
@@ -803,6 +803,9 @@ img.zoom-img {
 }
 
 @media (max-width: 367px) {
+  .planet-img {
+    width: 112px;
+  }
   .planet-name {
     font-size: 1.3rem;
     -webkit-transition: all 0.5s;
