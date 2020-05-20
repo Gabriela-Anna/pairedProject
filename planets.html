@@ -8,12 +8,8 @@
   <!--loading google font-->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@497&family=Righteous&display=swap"
     rel="stylesheet" />
-  <!--loading typed js-->
-  <script src="https://rawgit.com/mattboldt/typed.js/v2.0.6/lib/typed.min.js"></script>
-  <!--loading font awesome-->
-  <script src="https://kit.fontawesome.com/1125888b4e.js" crossorigin="anonymous"></script>
   <!--loading CSS-->
-  <link rel="stylesheet" href="../styles/style.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
 </head>
 
 <body class="section2">
@@ -29,86 +25,86 @@
     <!--Planets section starts here-->
     <section class="planets">
       <div id="earth observation" class="planet-container">
-        <a href="#">
-          <img id="earth" class="planet-img" src="../assets/earth.png" alt="planet Earth" />
-        </a>
+        <button class="planet-button">
+          <img id="earth" class="planet-img" src="./assets/earth.png" alt="planet Earth" />
+        </button>
         <p class="planet-name">Earth</p>
       </div>
 
       <div id="jupiter" class="planet-container">
-        <a href="#">
-          <img id="jupiter" class="planet-img" src="../assets/jupiter.png" atl="planet Jupiter" />
-        </a>
+        <button class="planet-button">
+          <img id="jupiter" class="planet-img" src="./assets/jupiter.png" atl="planet Jupiter" />
+        </button>
         <p class="planet-name">Jupiter</p>
       </div>
 
       <div id="neptune" class="planet-container">
-        <a href="#">
-          <img class="planet-img" src="../assets/neptune.png" alt="planet Neptune" />
-        </a>
+        <button class="planet-button">
+          <img class="planet-img" src="./assets/neptune.png" alt="planet Neptune" />
+        </button>
         <p class="planet-name">Neptune</p>
       </div>
 
       <div id="saturn" class="planet-container">
-        <a href="#">
-          <img class="planet-img saturn" src="../assets/saturn.png" alt="planet Saturn"/>
-        </a>
+        <button class="planet-button">
+          <img class="planet-img saturn" src="./assets/saturn.png" alt="planet Saturn"/>
+        </button>
         <p class="planet-name">Saturn</p>
       </div>
 
       <div id="mars" class="planet-container">
-        <a href="#">
-          <img class="planet-img" src="../assets/mars.png" alt="planet Mars" />
-        </a>
+        <button class="planet-button">
+          <img class="planet-img" src="./assets/mars.png" alt="planet Mars" />
+        </button>
         <p class="planet-name">Mars</p>
       </div>
 
       <div id="uranus" class="planet-container">
-        <a href="#">
-          <img class="planet-img" src="../assets/uranus.png" alt="planet Uranus" />
-        </a>
+        <button class="planet-button">
+          <img class="planet-img" src="./assets/uranus.png" alt="planet Uranus" />
+        </button>
         <p class="planet-name">Uranus</p>
       </div>
 
       <div id="mercury" class="planet-container">
-        <a href="#">
-          <img class="planet-img" src="../assets/mercury2.png" alt="planet Mercury" />
-        </a>
+        <button class="planet-button">
+          <img class="planet-img" src="./assets/mercury2.png" alt="planet Mercury" />
+        </button>
         <p class="planet-name">Mercury</p>
       </div>
 
       <div id="venus" class="planet-container">
-        <a href="#">
-          <img class="planet-img" src="../assets/venus.png" alt="planet Venus" />
-        </a>
+        <button class="planet-button">
+          <img class="planet-img" src="./assets/venus.png" alt="planet Venus" />
+        </button>
         <p class="planet-name">Venus</p>
       </div>
 
       <div id="moon" class="planet-container">
-        <a href="#">
-          <img class="planet-img" src="../assets/moon.png" alt="The Moon" />
-        </a>
+        <button class="planet-button">
+          <img class="planet-img" src="./assets/moon.png" alt="The Moon" />
+        </button>
         <p class="planet-name">Moon</p>
       </div>
 
       <div id="galaxies" class="planet-container">
-        <a href="#">
-          <img class="planet-img" src="../assets/galaxy.png" alt="Galaxies" />
-        </a>
+        <button class="planet-button">
+          <img class="planet-img" src="./assets/galaxy.png" alt="Galaxies" />
+        </button>
         <p class="planet-name">Galaxies</p>
       </div>
 
       <div id="sun" class="planet-container">
-        <a href="#">
-          <img class="planet-img" src="../assets/sun.png" alt="Sun" />
-        </a>
+        <button class="planet-button">
+          <img class="planet-img" src="./assets/sun.png" alt="Sun" />
+        </button>
         <p class="planet-name">Sun</p>
       </div>
 
       <div id="pluto" class="planet-container">
-        <a href="#">
-          <img class="planet-img" src="../assets/pluto.png" alt="Pluto dwarf planet" />
-        </a>
+        <button class="planet-button">
+          <img class="planet-img" src="./assets/pluto.png" alt="Pluto dwarf planet" />
+        </button>
         <p class="planet-name">Pluto</p>
       </div>
     </section>
@@ -119,10 +115,10 @@
     <div id="loader" class="lds-dual-ring hidden overlay"></div>
     <!--Images-->
     <div class="display-images">
-      <button class="close" type="submit" onclick="window.location.href='planets.html'">
+      <a class="close" href='./planets.html'">
         <i aria-hidden="true" class="fas fa-angle-double-left"></i>
         <span class="sr-only">Take me back to planets</span>
-      </button>
+      </a>
     </div>
     <!--Displaying images from API ends here-->
   </main>
@@ -137,15 +133,18 @@
   <!--Footer ends here-->
 </body>
 
-
+  <!--loading typed js-->
+  <script src="https://rawgit.com/mattboldt/typed.js/v2.0.6/lib/typed.min.js"></script>
+  <!--loading font awesome-->
+  <script src="https://kit.fontawesome.com/1125888b4e.js" crossorigin="anonymous"></script>
 <!--loading jQuery-->
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
 <!--loading zoom-->
-<script src="../scripts/zoom.js"></script>
+<script src="./scripts/zoom.js"></script>
 
 <!--Loading JS-->
-<script src="../scripts/scripts.js"></script>
+<script src="./scripts/scripts.js"></script>
 
 </html>

@@ -250,14 +250,6 @@ textarea {
   border: 0;
 }
 
-a {
-  display: inline-block;
-}
-
-a:focus {
-  border: 1px solid white;
-}
-
 .space-title,
 .space-subheading {
   background-color: rgba(0, 0, 0, 0.3);
@@ -279,8 +271,15 @@ a:focus {
   z-index: -1;
 }
 
-.title {
-  display: relative;
+.title p {
+  color: white;
+  position: absolute;
+  top: 53%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
 }
 
 .landing-title {
@@ -311,16 +310,16 @@ a:focus {
   border: 0;
   padding: 10px;
   border-radius: 7px;
-  margin-top: 30px;
+  margin-top: 40px;
   letter-spacing: 2px;
 }
 
-button:hover {
+.landing-button:hover {
   background-color: #192841;
   color: white;
 }
 
-button:focus {
+.landing-button:focus {
   background-color: #192841;
   color: white;
   border: 2px white solid;
@@ -375,6 +374,15 @@ button:focus {
   -webkit-animation: rotate 50s linear infinite;
           animation: rotate 50s linear infinite;
   margin: 8px;
+}
+
+.planet-button {
+  background: none;
+  border: none;
+}
+
+.planet-button:focus {
+  border: 1px solid white;
 }
 
 @-webkit-keyframes rotate {
@@ -531,6 +539,17 @@ button:focus {
   font-size: 1.3rem;
 }
 
+.close:hover {
+  background-color: #192841;
+  color: white;
+}
+
+.close:focus {
+  background-color: #192841;
+  color: white;
+  border: 2px white solid;
+}
+
 .display-container {
   padding: 1rem;
   display: -ms-grid;
@@ -680,12 +699,19 @@ img.zoom-img {
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
+  .title p {
+    top: 62%;
+  }
 }
 
 @media (max-width: 566px) {
   .landing-title {
     font-size: 3rem;
     line-height: 51px;
+  }
+  .title p {
+    top: 55%;
+    font-size: 0.9rem;
   }
   .button-container {
     top: 54%;
@@ -722,9 +748,18 @@ img.zoom-img {
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
+  .title p {
+    top: 55%;
+    width: 57%;
+    margin: 0 auto;
+    line-height: 22px;
+  }
+  .landing-button {
+    margin-top: 66px;
+  }
 }
 
-@media (max-width: 402px) {
+@media (max-width: 404px) {
   .display-images {
     -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -758,6 +793,13 @@ img.zoom-img {
   .overlay {
     left: 32%;
   }
+  .title p {
+    top: 50%;
+    width: 63%;
+  }
+  .landing-button {
+    margin-top: 40px;
+  }
 }
 
 @media (max-width: 367px) {
@@ -774,6 +816,11 @@ img.zoom-img {
 }
 
 @media (max-width: 340px) {
+  .title p {
+    top: 48%;
+    width: 70%;
+    font-size: 0.8rem;
+  }
   .space-subheading {
     font-size: 2.5rem;
   }

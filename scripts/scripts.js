@@ -45,18 +45,18 @@ spaceApp.getPlanets = function (query) {
 
 
 
+
 spaceApp.setUpEventListeners = function () {
     $('.planet-container').on('click', function (e) {
-        e.preventDefault()
+        // e.preventDefault()
         //getting planet id 
         const planetsId = $(this)[0].id;
         //displaying images matching user input
         spaceApp.getPlanets(planetsId);
-        //hiding content once user clicks on planet of choice
+        // //hiding content once user clicks on planet of choice
+        $('.planets, .type, footer').css('display', 'none');
+        //show link(button) to go back to planets
         $('.close').css('display', 'inline');
-        $('.planets').css('display', 'none');
-        $('.type').css('display', 'none')
-        $('footer').css('display', 'none')
         //displaying planet name as title once the images from API are displayed
         $('.space-title').css('display', 'none')
         if (planetsId === 'earth observation') {

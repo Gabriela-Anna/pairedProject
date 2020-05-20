@@ -33,6 +33,15 @@
   margin: 8px;
 }
 
+.planet-button{
+  background:none;
+  border:none;
+}
+
+.planet-button:focus{
+  border: 1px solid white;
+}
+
 @keyframes rotate {
   from {
     transform: rotate(0deg);

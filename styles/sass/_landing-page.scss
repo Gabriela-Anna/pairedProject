@@ -11,8 +11,19 @@
 
 }
 
-.title {
-  display: relative;
+// .title {
+//   position: relative;
+// }
+
+.title p {
+  color:white;
+  position: absolute;
+  top: 53%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
 }
 
 .landing-title {
@@ -43,16 +54,16 @@
   border: 0;
   padding: 10px;
   border-radius: 7px;
-  margin-top: 30px;
+  margin-top: 40px;
   letter-spacing: 2px;
 }
 
-button:hover{
+.landing-button:hover{
   background-color:#192841;
   color:white;
 }
 
-button:focus{
+.landing-button:focus{
   background-color:#192841;
   color:white;
   border: 2px white solid;

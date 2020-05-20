@@ -44,6 +44,18 @@
   font-size: 1.3rem;
 }
 
+
+.close:hover{
+  background-color:#192841;
+  color:white;
+}
+
+.close:focus{
+  background-color:#192841;
+  color:white;
+  border: 2px white solid;
+}
+
 .display-container {
   padding: 1rem;
   display: grid;
