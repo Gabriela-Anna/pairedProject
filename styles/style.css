@@ -274,7 +274,7 @@ textarea {
 .title p {
   color: white;
   position: absolute;
-  top: 53%;
+  top: 54%;
   left: 0;
   right: 0;
   text-align: center;
@@ -700,7 +700,8 @@ img.zoom-img {
     transition: all 0.5s;
   }
   .title p {
-    top: 62%;
+    top: 65%;
+    font-size: 1rem;
   }
 }
 
@@ -710,11 +711,11 @@ img.zoom-img {
     line-height: 51px;
   }
   .title p {
-    top: 55%;
+    top: 59%;
     font-size: 0.9rem;
   }
   .button-container {
-    top: 54%;
+    top: 57%;
   }
   .space-title {
     font-size: 2.7rem;
@@ -749,7 +750,7 @@ img.zoom-img {
     transition: all 0.5s;
   }
   .title p {
-    top: 55%;
+    top: 58%;
     width: 57%;
     margin: 0 auto;
     line-height: 22px;
@@ -794,11 +795,11 @@ img.zoom-img {
     left: 32%;
   }
   .title p {
-    top: 50%;
+    top: 53%;
     width: 63%;
   }
   .landing-button {
-    margin-top: 40px;
+    margin-top: 61px;
   }
 }
 
@@ -820,9 +821,10 @@ img.zoom-img {
 
 @media (max-width: 340px) {
   .title p {
-    top: 48%;
-    width: 70%;
-    font-size: 0.8rem;
+    top: 50%;
+    width: 65%;
+    font-size: 0.7rem;
+    line-height: 16px;
   }
   .space-subheading {
     font-size: 2.5rem;

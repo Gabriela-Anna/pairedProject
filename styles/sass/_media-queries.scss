@@ -24,7 +24,8 @@
   }
 
   .title p{
-    top:62%
+    top:65%;
+    font-size: 1rem;
   }
 }
 
@@ -35,15 +36,12 @@
   }
 
   .title p {
-    top: 55%;
-    // width: 45%;
-    // margin: 0 auto;
-    // line-height: 22px;
+    top: 59%;
     font-size: 0.9rem;
   }
 
   .button-container {
-    top: 54%;
+    top: 57%;
   }
   .space-title {
     font-size: 2.7rem;
@@ -76,11 +74,10 @@
   }
 
     .title p {
-    top: 55%;
+    top: 58%;
     width: 57%;
     margin: 0 auto;
     line-height: 22px;
-    // font-size: 0.9rem;
   }
 
     .landing-button{
@@ -123,12 +120,12 @@
   }
 
   .title p{
-    top: 50%;
+    top: 53%;
     width: 63%;
   }
 
     .landing-button{
-    margin-top:40px;
+    margin-top:61px;
   }
 }
 
@@ -151,9 +148,10 @@
 @media (max-width: 340px) {
 
   .title p {
-    top: 48%;
-    width: 70%;
-    font-size: 0.8rem;
+    top: 50%;
+    width: 65%;
+    font-size: 0.7rem;
+    line-height: 16px;
   }
 
   .space-subheading{
