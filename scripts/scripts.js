@@ -25,24 +25,28 @@ spaceApp.getPlanets = function (query) {
             $('#loader').removeClass('hidden')
             //once we have the information loop through it and get images
         }, success: function (result) {
-            spaceApp.images = Array.from(result.collection.items)
-            spaceApp.images.forEach((image) => {
-                //filter out images from 'Mars Celebration'
-                if (image.data[0].keywords !== undefined && !image.data[0].keywords.includes('Mars Celebration')) {
-                    $('.display-images').append(`
-                    <div class="display-container">
-                    <h2 class="heading-planets">${image.data[0].title}</h2>
-                    <img class='${query}-images images' data-action="zoom" tabIndex="0" src="${image.links[0].href}" alt="${image.data[0].title}">
-                    </div>
-                `);
-                }
-            });
+            updateDom(result, query);
         }, complete: function () {
             $('#loader').addClass('hidden')
         }
     });
 }
 
+// updating dom after api call
+updateDom = function(result, query) {
+    spaceApp.images = Array.from(result.collection.items)
+    spaceApp.images.forEach((image) => {
+        //filter out images from 'Mars Celebration'
+        if (image.data[0].keywords !== undefined && !image.data[0].keywords.includes('Mars Celebration')) {
+            $('.display-images').append(`
+                    <div class="display-container">
+                    <h2 class="heading-planets">${image.data[0].title}</h2>
+                    <img class='${query}-images images' data-action="zoom" tabIndex="0" src="${image.links[0].href}" alt="${image.data[0].title}">
+                    </div>
+                `);
+        }
+    });
+}
 
 
 spaceApp.setUpEventListeners = function () {
